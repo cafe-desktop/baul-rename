@@ -4,9 +4,11 @@
 requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
+    - aptitude
     - debhelper
     - dh-python
     - dpkg-dev
+    - git
     - python3
     - python3-gi
     - python3-polib
