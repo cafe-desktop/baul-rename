@@ -12,6 +12,9 @@ requires:
     - python3-polib
     - python3-setuptools
 
+before_scripts:
+  - ./debrepo-install 'gir1.2-ctk-3.0'
+
 build_scripts:
   - mkdir html-report
   - python3 setup.py build
