@@ -22,14 +22,14 @@
 
 import gi
 
-gi.require_version('Caja', '2.0')
+gi.require_version('Baul', '2.0')
 gi.require_version('Gtk', '3.0')
 
 import urllib.parse as urlparse
 import os
 import gettext
 import locale
-from gi.repository import Caja, Gtk, GObject, Gio
+from gi.repository import Baul, Gtk, GObject, Gio
 from baulrename.titlecase import titlecase
 
 locale.setlocale(locale.LC_ALL, '')
@@ -37,7 +37,7 @@ gettext.bindtextdomain('baulrename', '/usr/share/locale')
 gettext.textdomain('baulrename')
 _ = gettext.gettext
 
-class RenameMenu(GObject.GObject, Caja.MenuProvider):
+class RenameMenu(GObject.GObject, Baul.MenuProvider):
 
     oWindow = None
     oPixBufFolder = None
@@ -71,7 +71,7 @@ class RenameMenu(GObject.GObject, Caja.MenuProvider):
 
         if len(lstItems) > 1:
 
-            oMenuItem = Caja.MenuItem(name='baulrename', label=_('Rename All...'), icon='font')
+            oMenuItem = Baul.MenuItem(name='baulrename', label=_('Rename All...'), icon='font')
             oMenuItem.connect('activate', self.onActivate, lstItems)
 
             self.oWindow = oWindow
@@ -231,8 +231,8 @@ class RenameMenu(GObject.GObject, Caja.MenuProvider):
         self.oBuilder.connect_signals(self)
         self.oListStore = self.oBuilder.get_object('liststore')
         oDialog = self.oBuilder.get_object('dialog')
-        #oDialog.set_transient_for(self.oWindow) # Bug in Caja - hides dialogue in pager and dock
-        #oDialog.set_icon_name('baul') # Bug in Caja - shows Nautilus' icon
+        #oDialog.set_transient_for(self.oWindow) # Bug in Baul - hides dialogue in pager and dock
+        #oDialog.set_icon_name('baul') # Bug in Baul - shows Nautilus' icon
 
         for oItem in lstItems:
 
