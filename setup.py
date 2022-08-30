@@ -46,7 +46,7 @@ setup(
     license = 'GPL-3',
     classifiers = [
         'Development Status :: 5 - Production/Stable',
-        'Environment :: X11 Applications :: GTK',
+        'Environment :: X11 Applications :: CTK',
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Natural Language :: English',
