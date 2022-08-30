@@ -12,8 +12,34 @@ requires:
     - python3-polib
     - python3-setuptools
 
+    #required packages for baul
+    - gla11y
+    - gobject-introspection
+    - gtk-doc-tools
+    - intltool
+    - iso-codes
+    - libdconf-dev
+    - libexempi-dev
+    - libexif-dev
+    - libgirepository1.0-dev
+    - libglib2.0-doc
+    - libnotify-dev
+    - libpango1.0-dev
+    - libselinux1-dev
+    - libstartup-notification0-dev
+    - libx11-dev
+    - libxml2-dev
+    - meson
+    - python3-lxml
+    - quilt
+    - shared-mime-info
+    - xvfb
+
 before_scripts:
   - ./debrepo-install 'gir1.2-ctk-3.0'
+  - ./install-from-git https://github.com/cafe-desktop/cafe-common master
+  - ./install-from-git https://github.com/cafe-desktop/cafe-desktop master
+  - ./install-from-git https://github.com/cafe-desktop/baul master
 
 build_scripts:
   - mkdir html-report
