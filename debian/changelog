@@ -74,7 +74,7 @@ baul-rename (19.7.10) unstable; urgency=medium
 
 baul-rename (19.7.9) unstable; urgency=medium
 
-  * Dropped GTK2 and python2 suport
+  * Dropped CTK2 and python2 suport
 
  -- Robert Tari <robert@tari.in>  Tue, 09 Jul 2019 01:17:02 +0200
 
@@ -111,7 +111,7 @@ baul-rename (17.12.2) unstable; urgency=medium
 
 baul-rename (17.3.28) unstable; urgency=medium
 
-  * Added GTK 2.0 support for old Ubuntu MATE versions
+  * Added CTK 2.0 support for old Ubuntu MATE versions
 
  -- Robert Tari <robert.tari@gmail.com>  Tue, 28 Mar 2017 17:06:00 +0200
 
