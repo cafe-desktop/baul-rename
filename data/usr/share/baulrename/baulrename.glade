@@ -20,7 +20,7 @@ along with baulrename.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
 <interface domain="baulrename">
-  <requires lib="gtk+" version="3.20"/>
+  <requires lib="ctk+" version="3.20"/>
   <!-- interface-license-type gplv3 -->
   <!-- interface-name baulrename -->
   <object class="GtkAdjustment" id="adjustmentEnumerateDigits">
@@ -84,7 +84,7 @@ along with baulrename.  If not, see <http://www.gnu.org/licenses/>.
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="buttonClose">
-                <property name="label">gtk-close</property>
+                <property name="label">ctk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
@@ -98,7 +98,7 @@ along with baulrename.  If not, see <http://www.gnu.org/licenses/>.
             </child>
             <child>
               <object class="GtkButton" id="buttonApply">
-                <property name="label">gtk-apply</property>
+                <property name="label">ctk-apply</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
