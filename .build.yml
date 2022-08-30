@@ -1,0 +1,11 @@
+##########################################################
+# THE FOLLOWING LINES IS USED BY docker-build
+##########################################################
+requires:
+  debian:
+    # Useful URL: https://github.com/cafe-desktop/debian-packages
+
+build_scripts:
+  - mkdir html-report
+  - python3 setup.py build
+  - python3 setup.py install --root=/ --optimize=1
