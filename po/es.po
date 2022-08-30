@@ -1,16 +1,16 @@
-# Spanish translation for cajarename
+# Spanish translation for baulrename
 # Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
-# This file is distributed under the same license as the cajarename package.
+# This file is distributed under the same license as the baulrename package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cajarename\n"
-"Report-Msgid-Bugs-To: https://github.com/tari01/caja-rename/issues\n"
+"Project-Id-Version: baulrename\n"
+"Report-Msgid-Bugs-To: https://github.com/tari01/baul-rename/issues\n"
 "POT-Creation-Date: 2022-06-28 23:43+0200\n"
 "PO-Revision-Date: 2021-03-01 15:50+0000\n"
 "Last-Translator: Toni Estévez <toni.estevez@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/caja-rename/"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/baul-rename/"
 "master/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -19,103 +19,103 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.5\n"
 
-#: data/usr/share/cajarename/cajarename.glade:66
+#: data/usr/share/baulrename/baulrename.glade:66
 msgid "Rename..."
 msgstr "Renombrar…"
 
-#: data/usr/share/cajarename/cajarename.glade:139
+#: data/usr/share/baulrename/baulrename.glade:139
 msgid "Title case"
 msgstr "Mayúsculas iniciales"
 
-#: data/usr/share/cajarename/cajarename.glade:154
+#: data/usr/share/baulrename/baulrename.glade:154
 msgid "Lower case"
 msgstr "Minúsculas"
 
-#: data/usr/share/cajarename/cajarename.glade:169
+#: data/usr/share/baulrename/baulrename.glade:169
 msgid "Upper case"
 msgstr "Mayúsculas"
 
-#: data/usr/share/cajarename/cajarename.glade:184
+#: data/usr/share/baulrename/baulrename.glade:184
 msgid "Unchanged"
 msgstr "Sin cambios"
 
-#: data/usr/share/cajarename/cajarename.glade:203
+#: data/usr/share/baulrename/baulrename.glade:203
 msgid "Case"
 msgstr "Uso de mayúsculas"
 
-#: data/usr/share/cajarename/cajarename.glade:224
+#: data/usr/share/baulrename/baulrename.glade:224
 msgid "Position"
 msgstr "Posición"
 
-#: data/usr/share/cajarename/cajarename.glade:271
-#: data/usr/share/cajarename/cajarename.glade:407
+#: data/usr/share/baulrename/baulrename.glade:271
+#: data/usr/share/baulrename/baulrename.glade:407
 msgid "Text to insert"
 msgstr "Texto que insertar"
 
-#: data/usr/share/cajarename/cajarename.glade:290
+#: data/usr/share/baulrename/baulrename.glade:290
 msgid "Insert"
 msgstr "Insertar"
 
-#: data/usr/share/cajarename/cajarename.glade:313
+#: data/usr/share/baulrename/baulrename.glade:313
 msgid "From"
 msgstr "De"
 
-#: data/usr/share/cajarename/cajarename.glade:341
+#: data/usr/share/baulrename/baulrename.glade:341
 msgid "Length"
 msgstr "Longitud"
 
-#: data/usr/share/cajarename/cajarename.glade:372
+#: data/usr/share/baulrename/baulrename.glade:372
 msgid "Remove"
 msgstr "Eliminar"
 
-#: data/usr/share/cajarename/cajarename.glade:395
+#: data/usr/share/baulrename/baulrename.glade:395
 msgid "Text to search for"
 msgstr "Texto que buscar"
 
-#: data/usr/share/cajarename/cajarename.glade:448
+#: data/usr/share/baulrename/baulrename.glade:448
 msgid "Replace"
 msgstr "Reemplazar"
 
-#: data/usr/share/cajarename/cajarename.glade:469
+#: data/usr/share/baulrename/baulrename.glade:469
 msgid "Digits"
 msgstr "Dígitos"
 
-#: data/usr/share/cajarename/cajarename.glade:481
+#: data/usr/share/baulrename/baulrename.glade:481
 msgid "Start"
 msgstr "Comenzar"
 
-#: data/usr/share/cajarename/cajarename.glade:528
+#: data/usr/share/baulrename/baulrename.glade:528
 msgid "Enumerate"
 msgstr "Enumerar"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:74
+#: data/usr/share/baul-python/extensions/baul-rename.py:74
 msgid "Rename All..."
 msgstr ""
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:160
+#: data/usr/share/baul-python/extensions/baul-rename.py:160
 msgid "The following names are not acceptable:"
 msgstr "No son aceptables los nombres siguientes:"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:161
+#: data/usr/share/baul-python/extensions/baul-rename.py:161
 msgid "Invalid names"
 msgstr "Nombres no válidos"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:184
+#: data/usr/share/baul-python/extensions/baul-rename.py:184
 msgid "The following will be overwritten:"
 msgstr "Se sobrescribirá lo siguiente:"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:184
+#: data/usr/share/baul-python/extensions/baul-rename.py:184
 msgid "Do you wish to continue?"
 msgstr "¿Quiere continuar?"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:185
+#: data/usr/share/baul-python/extensions/baul-rename.py:185
 msgid "Confirm overwrite"
 msgstr "Confirmar la sobrescritura"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:206
+#: data/usr/share/baul-python/extensions/baul-rename.py:206
 msgid "There were errors while renaming the following:"
 msgstr "Se han producido errores al renombrar lo siguiente:"
 
-#: data/usr/share/caja-python/extensions/caja-rename.py:207
+#: data/usr/share/baul-python/extensions/baul-rename.py:207
 msgid "Rename error"
 msgstr "Error al renombrar"

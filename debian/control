@@ -1,15 +1,15 @@
-Source: caja-rename
+Source: baul-rename
 Section: utils
 Priority: optional
 Maintainer: Robert Tari <robert@tari.in>
 Build-Depends: debhelper (>= 10), dh-python, python3 (>= 3.6), python3-setuptools, python3-polib
 Standards-Version: 4.0.1
-Homepage: https://tari.in/www/software/caja-rename/
+Homepage: https://tari.in/www/software/baul-rename/
 X-Python-Version: >= 3.6
 
-Package: caja-rename
+Package: baul-rename
 Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}, python3-gi, gir1.2-gtk-3.0, caja, python3-caja
+Depends: ${misc:Depends}, ${python3:Depends}, python3-gi, gir1.2-gtk-3.0, baul, python3-baul
 Description: Batch renaming extension for Caja
  An extension for the Caja file browser allowing users to rename multiple
  files/folders in a single pass.
