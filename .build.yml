@@ -5,6 +5,7 @@ requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
     - python3
+    - python3-polib
     - python3-setuptools
 
 build_scripts:
