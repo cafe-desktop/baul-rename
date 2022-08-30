@@ -4,6 +4,9 @@
 requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
+    - debhelper
+    - dh-python
+    - dpkg-dev
     - python3
     - python3-polib
     - python3-setuptools
@@ -12,3 +15,6 @@ build_scripts:
   - mkdir html-report
   - python3 setup.py build
   - python3 setup.py install --root=/ --optimize=1
+  - dpkg-buildpackage -b -rfakeroot -us -uc
+  - cd ..
+  - dpkg -i *.deb
