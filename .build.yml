@@ -4,6 +4,7 @@
 requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
+    - python3
 
 build_scripts:
   - mkdir html-report
