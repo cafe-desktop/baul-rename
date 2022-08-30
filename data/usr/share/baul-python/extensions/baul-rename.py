@@ -23,13 +23,13 @@
 import gi
 
 gi.require_version('Baul', '2.0')
-gi.require_version('Gtk', '3.0')
+gi.require_version('Ctk', '3.0')
 
 import urllib.parse as urlparse
 import os
 import gettext
 import locale
-from gi.repository import Baul, Gtk, GObject, Gio
+from gi.repository import Baul, Ctk, GObject, Gio
 from baulrename.titlecase import titlecase
 
 locale.setlocale(locale.LC_ALL, '')
@@ -49,7 +49,7 @@ class RenameMenu(GObject.GObject, Baul.MenuProvider):
 
         GObject.Object.__init__(self)
 
-        oIconTheme = Gtk.IconTheme().get_default()
+        oIconTheme = Ctk.IconTheme().get_default()
 
         if oIconTheme.has_icon('folder'):
 
@@ -157,7 +157,7 @@ class RenameMenu(GObject.GObject, Baul.MenuProvider):
 
         if strInvalid:
 
-            oDlg = Gtk.MessageDialog(oDialog, Gtk.DialogFlags.MODAL, Gtk.MessageType.WARNING, Gtk.ButtonsType.CLOSE, _('The following names are not acceptable:') + '\n' + strInvalid)
+            oDlg = Ctk.MessageDialog(oDialog, Ctk.DialogFlags.MODAL, Ctk.MessageType.WARNING, Ctk.ButtonsType.CLOSE, _('The following names are not acceptable:') + '\n' + strInvalid)
             oDlg.set_title(_('Invalid names'))
             oDlg.run()
             oDlg.destroy()
@@ -181,12 +181,12 @@ class RenameMenu(GObject.GObject, Baul.MenuProvider):
 
             if strOverwrite:
 
-                oDlg = Gtk.MessageDialog(oDialog, Gtk.DialogFlags.MODAL, Gtk.MessageType.QUESTION, Gtk.ButtonsType.YES_NO, _('The following will be overwritten:') + '\n' + strOverwrite + '\n\n' + _('Do you wish to continue?'))
+                oDlg = Ctk.MessageDialog(oDialog, Ctk.DialogFlags.MODAL, Ctk.MessageType.QUESTION, Ctk.ButtonsType.YES_NO, _('The following will be overwritten:') + '\n' + strOverwrite + '\n\n' + _('Do you wish to continue?'))
                 oDlg.set_title(_('Confirm overwrite'))
                 nResult = oDlg.run()
                 oDlg.destroy()
 
-                if nResult == Gtk.ResponseType.NO:
+                if nResult == Ctk.ResponseType.NO:
                     return
 
             # Rename
@@ -203,7 +203,7 @@ class RenameMenu(GObject.GObject, Baul.MenuProvider):
 
             if strFailed:
 
-                oDlg = Gtk.MessageDialog(oDialog, Gtk.DialogFlags.MODAL, Gtk.MessageType.ERROR, Gtk.ButtonsType.CLOSE, _('There were errors while renaming the following:') + '\n' + strFailed)
+                oDlg = Ctk.MessageDialog(oDialog, Ctk.DialogFlags.MODAL, Ctk.MessageType.ERROR, Ctk.ButtonsType.CLOSE, _('There were errors while renaming the following:') + '\n' + strFailed)
                 oDlg.set_title(_('Rename error'))
                 oDlg.run()
                 oDlg.destroy()
@@ -226,7 +226,7 @@ class RenameMenu(GObject.GObject, Baul.MenuProvider):
 
     def onActivate(self, oMenuItem, lstItems):
 
-        self.oBuilder = Gtk.Builder()
+        self.oBuilder = Ctk.Builder()
         self.oBuilder.add_from_file('/usr/share/baulrename/baulrename.glade')
         self.oBuilder.connect_signals(self)
         self.oListStore = self.oBuilder.get_object('liststore')
