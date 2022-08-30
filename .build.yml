@@ -8,6 +8,7 @@ requires:
     - dh-python
     - dpkg-dev
     - python3
+    - python3-gi
     - python3-polib
     - python3-setuptools
 
