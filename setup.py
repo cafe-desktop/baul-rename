@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-from cajarename.appdata import *
+from baulrename.appdata import *
 import os, polib
 
 m_lstDataFiles = []

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#  caja-rename.py
+#  baul-rename.py
 #
 #  Copyright 2017-2021 Robert Tari <robert@tari.in>
 #
@@ -30,11 +30,11 @@ import os
 import gettext
 import locale
 from gi.repository import Caja, Gtk, GObject, Gio
-from cajarename.titlecase import titlecase
+from baulrename.titlecase import titlecase
 
 locale.setlocale(locale.LC_ALL, '')
-gettext.bindtextdomain('cajarename', '/usr/share/locale')
-gettext.textdomain('cajarename')
+gettext.bindtextdomain('baulrename', '/usr/share/locale')
+gettext.textdomain('baulrename')
 _ = gettext.gettext
 
 class RenameMenu(GObject.GObject, Caja.MenuProvider):
@@ -71,7 +71,7 @@ class RenameMenu(GObject.GObject, Caja.MenuProvider):
 
         if len(lstItems) > 1:
 
-            oMenuItem = Caja.MenuItem(name='cajarename', label=_('Rename All...'), icon='font')
+            oMenuItem = Caja.MenuItem(name='baulrename', label=_('Rename All...'), icon='font')
             oMenuItem.connect('activate', self.onActivate, lstItems)
 
             self.oWindow = oWindow
@@ -227,12 +227,12 @@ class RenameMenu(GObject.GObject, Caja.MenuProvider):
     def onActivate(self, oMenuItem, lstItems):
 
         self.oBuilder = Gtk.Builder()
-        self.oBuilder.add_from_file('/usr/share/cajarename/cajarename.glade')
+        self.oBuilder.add_from_file('/usr/share/baulrename/baulrename.glade')
         self.oBuilder.connect_signals(self)
         self.oListStore = self.oBuilder.get_object('liststore')
         oDialog = self.oBuilder.get_object('dialog')
         #oDialog.set_transient_for(self.oWindow) # Bug in Caja - hides dialogue in pager and dock
-        #oDialog.set_icon_name('caja') # Bug in Caja - shows Nautilus' icon
+        #oDialog.set_icon_name('baul') # Bug in Caja - shows Nautilus' icon
 
         for oItem in lstItems:
 

@@ -3,26 +3,26 @@
 
 Copyright (C)
 
-This file is part of cajarename.
+This file is part of baulrename.
 
-cajarename is free software: you can redistribute it and/or modify
+baulrename is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-cajarename is distributed in the hope that it will be useful,
+baulrename is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with cajarename.  If not, see <http://www.gnu.org/licenses/>.
+along with baulrename.  If not, see <http://www.gnu.org/licenses/>.
 
 -->
-<interface domain="cajarename">
+<interface domain="baulrename">
   <requires lib="gtk+" version="3.20"/>
   <!-- interface-license-type gplv3 -->
-  <!-- interface-name cajarename -->
+  <!-- interface-name baulrename -->
   <object class="GtkAdjustment" id="adjustmentEnumerateDigits">
     <property name="upper">10</property>
     <property name="step_increment">1</property>

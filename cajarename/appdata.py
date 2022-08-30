@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#  caja-rename.py
+#  baul-rename.py
 #
 #  Copyright 2017-2021 Robert Tari <robert@tari.in>
 #
@@ -20,9 +20,9 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 
-APPNAME = 'cajarename'
-APPEXECUTABLE='/usr/share/caja-python/extensions/caja-rename.py'
-APPDEPENDENCIES = ['python3-gi', 'gir1.2-gtk-3.0', 'caja']
+APPNAME = 'baulrename'
+APPEXECUTABLE='/usr/share/baul-python/extensions/baul-rename.py'
+APPDEPENDENCIES = ['python3-gi', 'gir1.2-gtk-3.0', 'baul']
 APPVERSION = '22.6.29'
 APPSHOWSETTINGS = 170323
 APPYEAR = '2017'
@@ -31,6 +31,6 @@ APPDESCRIPTION = 'Batch renaming extension for Caja.'
 APPLONGDESCRIPTION = 'An extension for Caja allowing users to rename multiple files/folders in a single pass. The application can change the case, insert, replace and delete strings, as well as enumerate the selection. Any changes are instantly visible in the preview list. The user interface strives to be as simple as possible, without confusing advanced operations.'
 APPAUTHOR = 'Robert Tari'
 APPMAIL = 'robert@tari.in'
-APPURL = 'https://tari.in/www/software/caja-rename/'
-APPKEYWORDS = ['caja','batch','rename','python','extension']
+APPURL = 'https://tari.in/www/software/baul-rename/'
+APPKEYWORDS = ['baul','batch','rename','python','extension']
 APPDEBUG = []
