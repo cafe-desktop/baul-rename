@@ -9,7 +9,7 @@ X-Python-Version: >= 3.6
 
 Package: baul-rename
 Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}, python3-gi, gir1.2-gtk-3.0, baul, python3-baul
+Depends: ${misc:Depends}, ${python3:Depends}, python3-gi, gir1.2-ctk-3.0, baul, python3-baul
 Description: Batch renaming extension for Baul
  An extension for the Baul file browser allowing users to rename multiple
  files/folders in a single pass.

@@ -22,7 +22,7 @@
 
 APPNAME = 'baulrename'
 APPEXECUTABLE='/usr/share/baul-python/extensions/baul-rename.py'
-APPDEPENDENCIES = ['python3-gi', 'gir1.2-gtk-3.0', 'baul']
+APPDEPENDENCIES = ['python3-gi', 'gir1.2-ctk-3.0', 'baul']
 APPVERSION = '22.6.29'
 APPSHOWSETTINGS = 170323
 APPYEAR = '2017'
