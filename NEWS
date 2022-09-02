@@ -1,0 +1,12 @@
+### baul-rename 1.25.0
+
+  * initial commit: caja-rename 22.6.29 fork
+  * ci: enable Github Actions
+  * remove .gitignore
+  * rename caja -> baul
+  * port from GTK to CTK
+  * update README
+  * update issues link
+  * Ignore all non-.po files in po/ subfolder 
+  * remove Debian folder
+  * update baulrename.pot
