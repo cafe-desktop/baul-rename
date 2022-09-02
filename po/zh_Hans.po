@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: baul-rename 20.1.26\n"
-"Report-Msgid-Bugs-To: https://github.com/tari01/baul-rename/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/cafe-desktop/baul-rename/issues\n"
 "POT-Creation-Date: 2022-06-28 23:43+0200\n"
 "PO-Revision-Date: 2022-01-20 07:53+0000\n"
 "Last-Translator: poi <erbaotao@outlook.com>\n"
