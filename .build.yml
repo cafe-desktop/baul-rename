@@ -11,6 +11,7 @@ requires:
     - python3-setuptools
 
 build_scripts:
+  - pip install build
   - mkdir html-report
   - unbuffer python3 -m build | tee -a --output-error=exit ./html-report/output_${TRAVIS_COMMIT}
   - if [ ${PIPESTATUS[0]} -ne 0 ];then
