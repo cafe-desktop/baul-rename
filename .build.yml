@@ -6,6 +6,7 @@ requires:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
     - expect #required for unbuffer
     - python3
+    - python3-pip
     - python3-polib
     - python3-setuptools
 
