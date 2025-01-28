@@ -5,13 +5,14 @@ requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
     - expect #required for unbuffer
+    - pipx
     - python3
     - python3-pip
     - python3-polib
     - python3-setuptools
 
 build_scripts:
-  - pip install build
+  - pipx install build
   - mkdir html-report
   - unbuffer python3 -m build | tee -a --output-error=exit ./html-report/output_${TRAVIS_COMMIT}
   - if [ ${PIPESTATUS[0]} -ne 0 ];then
