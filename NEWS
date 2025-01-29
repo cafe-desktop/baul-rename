@@ -1,3 +1,12 @@
+### baul-rename 2.0.0
+
+  * ci:
+    - main: Fix Github Actions Warnings
+    - use workflow inside cafe-common
+    - add debian sid build
+    - some changes to force deploy
+  * titlecase: avoid invalid escape sequence
+
 ### baul-rename 1.25.0
 
   * initial commit: caja-rename 22.6.29 fork

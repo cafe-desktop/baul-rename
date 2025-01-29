@@ -23,9 +23,9 @@
 APPNAME = 'baulrename'
 APPEXECUTABLE='/usr/share/baul-python/extensions/baul-rename.py'
 APPDEPENDENCIES = ['python3-gi', 'gir1.2-ctk-3.0', 'baul']
-APPVERSION = '1.25.0'
+APPVERSION = '2.0.0'
 APPSHOWSETTINGS = 170323
-APPYEAR = '2022'
+APPYEAR = '2025'
 APPTITLE = 'Rename...'
 APPDESCRIPTION = 'Batch renaming extension for Baul.'
 APPLONGDESCRIPTION = 'An extension for Baul allowing users to rename multiple files/folders in a single pass. The application can change the case, insert, replace and delete strings, as well as enumerate the selection. Any changes are instantly visible in the preview list. The user interface strives to be as simple as possible, without confusing advanced operations.'
