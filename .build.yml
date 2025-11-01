@@ -10,5 +10,8 @@ requires:
     - python3-setuptools
 
 build_scripts:
-  - ./debrepo-install.sh
-  - ./build-debs
+  - git clone --depth 1 https://github.com/cafe-desktop/debian-packages -b gh-pages tmp-install
+  - cd tmp-install
+  - dpkg -i *.deb
+#  - ./debrepo-install.sh
+#  - ./build-debs
