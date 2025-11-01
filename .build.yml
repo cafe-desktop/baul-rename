@@ -10,5 +10,5 @@ requires:
     - python3-setuptools
 
 build_scripts:
-  - ./debrepo-install
+  - ./debrepo-install.sh
   - ./build-debs
