@@ -6,8 +6,7 @@ set -x
 
 # Install .deb packages from release branch
 echo deb [trusted=yes] https://cafe-desktop.github.io/debian-packages/ ./ >> /etc/apt/sources.list
-aptitude -y update
-aptitude -y update
+apt update
 
 if [ $# -gt 0 ]
 then
