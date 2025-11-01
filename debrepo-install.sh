@@ -6,7 +6,7 @@ set -x
 
 # Install .deb packages from release branch
 echo deb [trusted=yes] https://cafe-desktop.github.io/debian-packages/ ./ >> /etc/apt/sources.list
-apt modernize-sources
+apt -y modernize-sources
 apt update
 
 if [ $# -gt 0 ]
