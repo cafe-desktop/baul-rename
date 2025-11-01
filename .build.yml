@@ -4,6 +4,8 @@
 requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
+    - git
+    - gdebi
     - expect #required for unbuffer
     - python3
     - python3-polib
@@ -12,6 +14,6 @@ requires:
 build_scripts:
   - git clone --depth 1 https://github.com/cafe-desktop/debian-packages -b gh-pages tmp-install
   - cd tmp-install
-  - dpkg -i *.deb
+  - gdebi --n *.deb
 #  - ./debrepo-install.sh
 #  - ./build-debs
