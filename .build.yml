@@ -4,6 +4,7 @@
 requires:
   debian:
     # Useful URL: https://github.com/cafe-desktop/debian-packages
+    - aptitude
     - git
     - gdebi
     - expect #required for unbuffer
@@ -12,6 +13,7 @@ requires:
     - python3-setuptools
 
 build_scripts:
+  - aptitude -y install ctk-update-icon-cache
   - git clone --depth 1 https://github.com/cafe-desktop/debian-packages -b gh-pages tmp-install
   - cd tmp-install
   - gdebi --n *.deb
