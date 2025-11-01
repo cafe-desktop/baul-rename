@@ -8,6 +8,7 @@ set -x
 echo deb [trusted=yes] https://cafe-desktop.github.io/debian-packages/ ./ >> /etc/apt/sources.list
 apt -y modernize-sources
 apt update
+aptitude -y install baul
 
 if [ $# -gt 0 ]
 then
