@@ -19,6 +19,7 @@ build_scripts:
   - aptitude -y install `grep ^Package Packages | cut -d' ' -f2 | tr '\n' ' ' | sed 's/$/\n/'` > aptlog
   - if grep -w "Not Installed" aptlog; then
   -     cat aptlog
+  -     cat aptlog|grep Depends
   -     exit 1
   - fi
   - cat aptlog
