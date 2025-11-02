@@ -16,7 +16,7 @@ build_scripts:
   - ./debrepo-install
   - git clone --depth 1 https://github.com/cafe-desktop/debian-packages -b gh-pages tmp-install
   - cd tmp-install
-  - aptitude -y install `grep ^Package: Packages | cut -d' ' -f2 | tr '\n' ' '`
+  - grep ^Package: Packages | cut -d' ' -f2 | tr '\n' ' ' | xargs -r aptitude -y install
 #  - gdebi --n *.deb
 #  - ./debrepo-install.sh
 #  - ./build-debs
