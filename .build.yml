@@ -21,6 +21,7 @@ build_scripts:
   -     cat aptlog
   -     exit 1
   - fi
+  - cat aptlog
 #  - gdebi --n *.deb
 #  - ./debrepo-install.sh
 #  - ./build-debs
