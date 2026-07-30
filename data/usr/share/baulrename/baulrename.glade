@@ -53,7 +53,7 @@ along with baulrename.  If not, see <http://www.gnu.org/licenses/>.
       <!-- column-name folder -->
       <column type="gchararray"/>
       <!-- column-name img -->
-      <column type="GdkPixbuf"/>
+      <column type="CdkPixbuf"/>
       <!-- column-name old -->
       <column type="gchararray"/>
       <!-- column-name new -->
