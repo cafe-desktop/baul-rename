@@ -1,3 +1,11 @@
+### baul-rename 2.1.0
+
+  * ci: add debian stable build
+  * baulrename.glade: rename GdkPixbuf -> CdkPixbuf
+  * add Makefile making pot file
+  * po: rename baulrename -> baul-rename
+
+
 ### baul-rename 2.0.0
 
   * ci:
