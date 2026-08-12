@@ -6,4 +6,4 @@ requires:
 
 build_scripts:
   - ./debrepo-install
-  - ./build-debs https://github.com/cafe-desktop/debian-packages devel baul-rename
+  - ./testrepo
